@@ -6,7 +6,6 @@ public class Invoice {
 	private Double tax;
 	
 	public Invoice() {
-        
     }
 	public Invoice(Double basicPayment, Double tax) {
         this.basicPayment = basicPayment;
@@ -26,7 +25,7 @@ public class Invoice {
         this.tax = tax;
     }
     public Double getTotalPayment() {
-        return getBasicPayment() - getTax();
+        return getBasicPayment() + getTax();
     }
     	
 
